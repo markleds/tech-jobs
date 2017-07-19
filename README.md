@@ -1,12 +1,12 @@
 # $tech => jobs   
 
-[![Imgur](https://i.imgur.com/4W7MMdJl.png)](https://tech-job.herokuapp.com/)
+[![Imgur](https://i.imgur.com/88xmGhNl.jpg)](https://tech-job.herokuapp.com/)
 
 https://tech-job.herokuapp.com/
 
 #### by [Mark Ledbetter](http://markledbetterdesigns.com/)
 
-$tech => jobs is a single page web app where users can search for jobs in the tech industry by keyword and location (city/state) and if they find a job they are interested in, they can save it to their Journal where they will find a link to apply for the job. The Job Journal allows the user to keep track of the steps they've taken in the application process: date applied, application contact, interview info, etc.
+$tech => jobs is a single page web app where users can search for jobs in the tech industry by keyword and location (city/state) and if they find a job they are interested in, they can save it to their Journal where they will find a link to apply for the job. The Job Journal allows the user to keep track of the steps they've taken in the application process: date applied, application contact, interview info, etc.  
 ___
 ### Technologies Used  
 
