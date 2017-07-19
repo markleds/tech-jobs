@@ -28,7 +28,7 @@ class SearchBar2 extends Component {
   render() {
     return(
       <div className="search-wrapper">
-        <div className="search-container-2 ">
+        <div className="search-container-2">
           <form onSubmit={this.handleSubmit.bind(this)}>
             <div>
               <button className="hvr-underline-from-center">search</button>
