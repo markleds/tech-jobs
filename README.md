@@ -22,7 +22,7 @@ ___
 ### API  
 The app uses job data from two APIs:
  * [GitHub Jobs](https://jobs.github.com/api)
- * [Authenic Jobs](https://authenticjobs.com/api)
+ * [Authentic Jobs](https://authenticjobs.com/api)
 ___
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
