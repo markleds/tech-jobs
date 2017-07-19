@@ -32,7 +32,9 @@ If you do not already have node.js installed on your computer, please visit http
 
 ### Installing
  * Create a directory and download all of the files for the app into that directory.  
- * in the command line of the terminal, navigate to the folder you have created and then  and run   
+ * In the command line of the terminal, navigate in to the folder you have created.   
+#### Initialize Node Back End  
+In the command line of the terminal, navigate into the be-node folder and run the following commands:  
 ```
 npm install
 ```
@@ -41,9 +43,20 @@ npm install
 node index.js
 ```
  * Open your web browser and type the following url into the address bar:
- ```
- localhost:3000
- ```
+```
+localhost:5000
+```  
+#### Initialize React Back End  
+In the command line of the terminal, navigate into the fe-node folder and run the following commands:  
+```
+npm install
+```
 
-## Instructions for Use  
-To download and run the App, install the package.json dependencies and seed your database with the data in the migrations folder.  
+* Once all of the dependencies have been downloaded to your computer you can run the following command to initialize a local server on your machine:  
+ ```
+ npm start
+ ```
+* This should automatically open your web browser to view the site on the localhost server. If not you can go to your web browser and tpe the following url into the address bar:
+```
+localhost:5000
+```
