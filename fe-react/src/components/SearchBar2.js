@@ -31,7 +31,7 @@ class SearchBar2 extends Component {
         <div className="search-container-2">
           <form onSubmit={this.handleSubmit.bind(this)}>
             <div>
-              <button className="hvr-underline-from-center">search</button>
+              <button className="hvr-underline-from-center"><img src={require('../assets/img/search-icon.png')} height="13px"/> search</button>
               <div className="search-input-container">
                 keyword
                 <input className="search-input" name="keyword" onChange={this.handleChange} placeholder="javascript"/>

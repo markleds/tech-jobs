@@ -144,14 +144,14 @@ html, body {
 .search-wrapper {
   width: 100vw;
   margin-top: 4px;
-  background-color: #fff;
+  background-color: transparent;
   /*position: fixed;
   top: -100px;*/
 }
 .search-container-2 {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 3px 0 10px 0;
+  padding: 3px 0 0 0;
   /*border-bottom: #0a2f52 1px solid;*/
   font-size: 16px;
   text-align: center;
@@ -175,7 +175,8 @@ html, body {
   border-bottom: #e3b019 1px solid !important;
   padding: 0 !important;
   padding: 4px 5px !important;
-  margin: 0 45px 0 6px !important;
+  margin: 0 45px 0 6px;
+  margin-bottom: 1px;
   width: 120px !important;
   color: #000;
   font-size: 16px;
@@ -187,6 +188,10 @@ html, body {
   color: #89a7ab;
   font-family: "avenir";
   /*text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);*/
+}
+.search-container-2 input:focus {
+  border-bottom: #e3b019 2px solid !important;
+  margin-bottom: 0px;
 }
 .search-container-2 button {
   background-color: transparent !important;
@@ -727,7 +732,7 @@ textarea:focus {
 }
 .journal-job-header-2 {
   width: 100%;
-  text-align: center;
+  text-align: left;
   height: auto;
   overflow: auto;
 }
@@ -749,19 +754,41 @@ textarea:focus {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 6px;
+  text-align: left;
+}
+.journal-job-header-2 h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0 6px 0;
+  text-align: left;
+}
+.journal-job-header-2 h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  text-align: left;
 }
 .journal-description-format {
   text-align: justify;
+}
+.journal-description-format h1 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.journal-description-format h2 {
+  text-align: left;
 }
 .apply-container {
   border-top: #bdbdbd 1px solid;
   border-bottom: #bdbdbd 1px solid;
   margin: 8px 0;
-  padding: 8px;
+  padding: 8px 0;
 }
 .apply-button {
-  font-size: 24px;
-  padding-bottom: 2px !important;
+  font-size: 20px;
+  padding-bottom: 7px !important;
 }
 /* END JOURNAL JOB CONTENT */
 

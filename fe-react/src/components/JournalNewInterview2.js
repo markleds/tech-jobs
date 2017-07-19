@@ -75,6 +75,25 @@ class JournalNewInterview2 extends Component {
     });
   }
 
+  destroyJournal() {
+    if (confirm('Are you certain you want to delete this?') === true) {
+      axios
+      .delete(`${Endpoint.BASE_URL}/journals/${this.props.params.journal_id}`, {
+        headers: {
+          'Authorization': window.localStorage.getItem('token')
+        }
+      })
+      .then(() => {
+        browserHistory.push('/journal');
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    } else {
+      browserHistory.push(`/journals/${this.props.params.journal_id}`);
+    }
+  }
+
   handleSubmit(event) {
     event.preventDefault();
     axios
@@ -123,7 +142,7 @@ class JournalNewInterview2 extends Component {
         <div className="main-container">
           <div className="journal-container">
             <div className="journal-entry-container-2">
-              <h2>Application Journal</h2>
+              <h2><button type="button" className="icon-button delete-button" onClick={this.destroyJournal.bind(this)} />Application Journal</h2>
               <div className="journal-entry-item">
                 <div className="journal-entry-label-2">
                   applied:
@@ -202,7 +221,7 @@ class JournalNewInterview2 extends Component {
                    <textarea onChange={this.handleChange} name="interview_notes" type="text" placeholder="notes"/>
                   </div>
                   <div className="journal-save-2">
-                    <button className="hvr-underline-from-center">save interview</button>
+                    <button className="hvr-underline-from-center"><img src={require('../assets/img/save-icon-2.png')} height="13px"/> save interview</button>
                   </div>
                 </form>
                 </div>

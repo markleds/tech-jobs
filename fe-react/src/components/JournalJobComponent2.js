@@ -11,12 +11,16 @@ class JournalJobComponent2 extends Component {
   renderHowToApply() {
     if(this.props.job.api_num) {
       return (
+        <div>
+        <h2>To apply:</h2>
+
         <div className="hvr-underline-from-center" dangerouslySetInnerHTML={{__html: this.props.job.apply_url}} />
+        </div>
       );
     } else {
       return (
         <div>
-        <Link to={`${this.props.job.apply_url}`} target="_blank" className="hvr-underline-from-center apply-button">click here</Link>
+          <Link to={`${this.props.job.apply_url}`} target="_blank" className="hvr-underline-from-center apply-button"><img src={require('../assets/img/apply-icon.png')} height="15px"/> click here to apply</Link>
         </div>
       );
     }
@@ -43,8 +47,8 @@ class JournalJobComponent2 extends Component {
       <div className="journal-job-container">
         <div className="journal-job-header-2">
           {this.renderCompanyLogo()}
-            <h2>{this.props.job.title}<br/>
-            at  {this.props.job.company_name}</h2>
+            <h1>{this.props.job.title}<br/>
+            at  {this.props.job.company_name}</h1>
             <div>
               <Link to={`${this.props.job.comcompany_url}`} target="_blank" className="hvr-underline-from-center">{this.props.job.company_url}</Link>
             </div>
@@ -58,7 +62,6 @@ class JournalJobComponent2 extends Component {
               Posted on  {Moment(dateCreated).format('dddd, MMMM DD, YYYY')} on <img src={`${this.props.job.api_logo}`} height="24px" />
             </div>
             <div className="apply-container">
-            <h2>To apply:</h2>
               {/*<div dangerouslySetInnerHTML={{__html: this.props.job.apply_url}} />*/}
               {this.renderHowToApply()}
             </div>

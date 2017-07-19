@@ -23,18 +23,14 @@ class LoggedInHeader2 extends Component {
         <div className="header-wrapper-2">
           <div className="header-container">
             <div className="nav-container">
-              <LoggedInNav2 displaySearch={this.displaySearch.bind(this)} />
+              <LoggedInNav2 displaySearch={this.displaySearch.bind(this)} navDisplayed={this.state.navDisplayed}/>
               </div>
             <Link to="/journal"><div className="logo-container-logged-in">
               <div className="cursor-new"><span className="blinking-cursor">|</span></div>
             </div></Link>
           </div>
         </div>
-        {
-          this.state.navDisplayed
-            ? <SearchBar2 />
-            : null
-        }
+        {this.state.navDisplayed && <SearchBar2 />}
       </div>
     );
   }

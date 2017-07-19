@@ -191,7 +191,7 @@ class JournalOneJob2 extends Component {
               })}
 
               <div className="add-interview-2">
-                <Link to={`/journals/${this.state.journal.id}/interviews/new`}><button className="hvr-underline-from-center">add interview</button></Link>
+                <Link to={`/journals/${this.state.journal.id}/interviews/new`}><button className="hvr-underline-from-center"><img src={require('../assets/img/add-icon.png')} height="13px"/> add interview</button></Link>
               </div>
 
             </div>

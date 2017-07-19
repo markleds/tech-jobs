@@ -235,7 +235,7 @@ class JournalEditInterview extends Component {
                    <textarea onChange={this.handleChange} name="interview_notes" type="text" placeholder="notes" value={this.state.interview_notes}/>
                   </div>
                   <div className="journal-save-2">
-                    <button className="hvr-underline-from-center">save</button>
+                    <button className="hvr-underline-from-center"><img src={require('../assets/img/save-icon-2.png')} height="13px"/> save</button>
                   </div>
                 </form>
                 </div>
